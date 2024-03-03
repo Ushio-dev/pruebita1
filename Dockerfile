@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR webapp
 
 EXPOSE 80
-EXPOSE 5432
+EXPOSE 7091
 
 COPY ./*.csproj ./
 RUN dotnet restore
